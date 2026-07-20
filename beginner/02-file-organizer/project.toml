@@ -1,0 +1,14 @@
+schema_version = 1
+id = "beginner-02"
+slug = "file-organizer"
+title = "Safe File Organizer CLI"
+level = "beginner"
+status = "complete"
+featured = true
+summary = "Organise files into category folders with a dry-run default, no overwrites, and undo."
+python = ">=3.12"
+interfaces = ["cli"]
+concepts = ["pathlib", "dry-run", "atomic-write", "manifest", "reversible-operations"]
+prerequisites = ["functions", "basic classes"]
+tags = ["cli", "files", "automation"]
+estimated_minutes = 240

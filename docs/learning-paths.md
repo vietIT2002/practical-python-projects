@@ -23,13 +23,13 @@ Build confidence with the language and good habits (structure, tests, clear
 CLIs).
 
 1. [Expense Tracker CLI](../beginner/01-expense-tracker/README.md) _(beginner)_
-2. Safe File Organizer CLI _(planned, beginner)_
+2. [Safe File Organizer CLI](../beginner/02-file-organizer/README.md) _(beginner)_
 
 ## Path 2: Automation and tooling
 
 Learn to automate real tasks safely, with dry-run previews and clear output.
 
-1. Safe File Organizer CLI _(planned, beginner)_
+1. [Safe File Organizer CLI](../beginner/02-file-organizer/README.md) _(beginner)_
 2. Additional automation utilities _(planned)_
 
 ## Path 3: Backend and APIs

@@ -18,6 +18,7 @@ and running a script from the terminal.
 | Project | What you build | Concepts |
 |---|---|---|
 | [01 · Expense Tracker CLI](01-expense-tracker/README.md) | A command-line expense tracker with exact money handling and safe storage | `Decimal`, dataclasses, JSON, validation, atomic writes |
+| [02 · Safe File Organizer CLI](02-file-organizer/README.md) | A file organiser with a dry-run default, no overwrites, and undo | `pathlib`, dry-run, manifests, reversible operations |
 
 More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for
 what is planned, and the [learning paths](../docs/learning-paths.md) for a

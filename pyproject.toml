@@ -35,7 +35,7 @@ extend-exclude = [".ai"]
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "C4", "PTH", "RUF"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["expense_tracker", "scripts"]
+known-first-party = ["expense_tracker", "file_organizer", "scripts"]
 
 [tool.ruff.format]
 docstring-code-format = true
@@ -47,14 +47,27 @@ warn_unused_configs = true
 warn_redundant_casts = true
 warn_unused_ignores = true
 explicit_package_bases = true
-mypy_path = "beginner/01-expense-tracker/src"
-exclude = ['^\.venv/', '^\.ai/']
+mypy_path = [
+    "beginner/01-expense-tracker/src",
+    "beginner/02-file-organizer/src",
+]
+# Project source is type-checked; per-project test suites share basenames
+# (e.g. test_cli.py) across projects, so they are checked by pytest, not mypy.
+exclude = ['^\.venv/', '^\.ai/', '/tests/.*', '^tests/.*']
 
 [tool.pytest.ini_options]
 minversion = "8.0"
-addopts = "-ra --strict-markers --strict-config"
-testpaths = ["tests", "beginner/01-expense-tracker/tests"]
-pythonpath = [".", "beginner/01-expense-tracker/src"]
+addopts = "-ra --strict-markers --strict-config --import-mode=importlib"
+testpaths = [
+    "tests",
+    "beginner/01-expense-tracker/tests",
+    "beginner/02-file-organizer/tests",
+]
+pythonpath = [
+    ".",
+    "beginner/01-expense-tracker/src",
+    "beginner/02-file-organizer/src",
+]
 markers = [
     "integration: local multi-component test",
     "network: requires external network access; excluded by default",
@@ -63,7 +76,7 @@ markers = [
 
 [tool.coverage.run]
 branch = true
-source = ["scripts", "expense_tracker"]
+source = ["scripts", "expense_tracker", "file_organizer"]
 
 [tool.coverage.report]
 show_missing = true
