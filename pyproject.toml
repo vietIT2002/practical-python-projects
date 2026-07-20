@@ -28,7 +28,9 @@ dev = [
 [tool.ruff]
 line-length = 88
 target-version = "py312"
-extend-exclude = [".ai"]
+# Self-contained projects (their own deps + lockfile) are checked in their own
+# environment via a dedicated CI job, not by the root toolchain.
+extend-exclude = [".ai", "intermediate/01-url-shortener-api"]
 
 [tool.ruff.lint]
 # Sensible, teachable default rule set. Individual projects may extend this.
@@ -53,7 +55,13 @@ mypy_path = [
 ]
 # Project source is type-checked; per-project test suites share basenames
 # (e.g. test_cli.py) across projects, so they are checked by pytest, not mypy.
-exclude = ['^\.venv/', '^\.ai/', '/tests/.*', '^tests/.*']
+exclude = [
+    '^\.venv/',
+    '^\.ai/',
+    '/tests/.*',
+    '^tests/.*',
+    '^intermediate/01-url-shortener-api/',
+]
 
 [tool.pytest.ini_options]
 minversion = "8.0"

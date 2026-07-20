@@ -16,11 +16,13 @@ packages, reading tracebacks, and running tests.
 
 ## Projects
 
-Projects are added incrementally. See the [roadmap](../docs/roadmap.md) for what
-is planned, and the [learning paths](../docs/learning-paths.md) for a suggested
-order.
+| Project | What you build | Concepts |
+|---|---|---|
+| [01 · URL Shortener API](01-url-shortener-api/README.md) | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests | FastAPI, SQLAlchemy 2.0, Alembic, layered architecture |
 
-_No projects are published in this level yet._
+More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for
+what is planned, and the [learning paths](../docs/learning-paths.md) for a
+suggested order.
 
 ## How this level is organised
 

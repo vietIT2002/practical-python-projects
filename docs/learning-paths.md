@@ -36,7 +36,7 @@ Learn to automate real tasks safely, with dry-run previews and clear output.
 
 Move from scripts to services with clear boundaries and tested endpoints.
 
-1. URL Shortener API _(planned, advanced)_
+1. [URL Shortener API](../intermediate/01-url-shortener-api/README.md) _(intermediate)_
 2. Additional backend services _(planned)_
 
 ## Path 4: AI-assisted applications
