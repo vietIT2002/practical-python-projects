@@ -55,6 +55,7 @@ uv run pytest                  # tests
 uv lock --check                # lockfile is up to date
 uv run pip-audit               # dependency vulnerability audit
 uv run python scripts/check_repository.py --full   # structure + link checks
+uv run python scripts/validate_project_metadata.py # project metadata
 ```
 
 These are the same checks enforced in [continuous integration](../maintainers/ci.md).

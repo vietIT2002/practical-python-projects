@@ -54,3 +54,6 @@ jobs:
 
       - name: Validate repository structure
         run: uv run python scripts/check_repository.py --full
+
+      - name: Validate project metadata
+        run: uv run python scripts/validate_project_metadata.py
