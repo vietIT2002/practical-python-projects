@@ -11,6 +11,7 @@ Where everything lives, how projects are named, and what "published" means.
 | `docs/architecture/` | Architecture Decision Records (the "why" behind the structure). |
 | `docs/getting-started/` | Environment setup and quality-command reference. |
 | `docs/maintainers/` | Operational notes for maintainers. |
+| `assets/brand/` | The visual identity (logo, banner, social preview). See [brand guidelines](brand-guidelines.md). |
 | `scripts/` | Repository tooling, including the structural validation script. |
 | `tests/` | Tests for the repository's own tooling and shared invariants. |
 | `.github/` | Continuous integration workflow and Dependabot configuration. |

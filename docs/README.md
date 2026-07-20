@@ -16,6 +16,8 @@ Everything you need to understand, use, and contribute to this repository.
 
 - [Architecture decisions](architecture/README.md) — the records behind how the
   repository is structured.
+- [Brand guidelines](brand-guidelines.md) — the visual identity and how to reuse
+  it.
 - [Maintainer notes](maintainers/README.md) — assumptions, open decisions, and
   operational tasks.
 
