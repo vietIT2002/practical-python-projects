@@ -50,8 +50,9 @@ for the exact bar.
 
 ## Contributing
 
-A full contribution guide is being prepared. Until then, please open an issue to
-discuss ideas or report problems.
+Contributions are welcome. Start with the [contributing guide](CONTRIBUTING.md),
+and please follow the [Code of Conduct](CODE_OF_CONDUCT.md). For security issues,
+use the private route in [SECURITY.md](SECURITY.md).
 
 ## License
 

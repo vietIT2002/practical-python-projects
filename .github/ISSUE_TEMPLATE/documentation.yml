@@ -1,0 +1,24 @@
+name: Documentation
+description: Report unclear, missing, or incorrect documentation.
+labels: ["documentation", "needs-triage"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where is the documentation?
+      description: File path or link to the section.
+      placeholder: e.g. docs/getting-started/development-environment.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: false

@@ -8,3 +8,6 @@ learners do not need to read this section.
   the GitHub interface.
 - [Continuous integration](ci.md) — what the quality workflow runs, the required
   status check names, local equivalents, and how to diagnose failures.
+- [GitHub settings](github-settings.md) — exact manual steps for settings that
+  live in the GitHub interface (topics, private reporting, rulesets, and more).
+- [Labels](labels.md) — the issue and pull-request label taxonomy.

@@ -22,18 +22,21 @@ These were selected to keep progress moving and can be changed before launch:
 - Python support: minimum 3.12; continuous integration targets 3.12–3.14 as the
   dependency ecosystem allows.
 
-## Open decisions (needed before launch)
+## Contact and reporting decisions
 
-These concern public contact details and are intentionally left unset until the
-maintainer confirms them, since they cannot be guessed:
+To avoid publishing a personal email address, private contact is handled through
+GitHub's built-in private vulnerability reporting rather than an email address:
 
-| Item | Needed for | Status |
-|---|---|---|
-| Public contact email | Community and branding files | Pending |
-| Security reporting address | `SECURITY.md` | Pending |
-| Code of Conduct enforcement contact | `CODE_OF_CONDUCT.md` | Pending |
+| Item | Decision |
+|---|---|
+| Security reporting | GitHub private vulnerability reporting (see `SECURITY.md`). |
+| Code of Conduct reports | Same private reporting channel, labelled as a Code of Conduct report. |
+| General questions | GitHub Issues and Discussions. |
 
-Foundation and tooling work does not depend on these and can proceed.
+Enabling private vulnerability reporting is a maintainer action; see
+[GitHub settings](github-settings.md). Using the security channel for Code of
+Conduct reports is a pragmatic interim; a dedicated contact address can be added
+later without breaking anything.
 
 ## Actions that require GitHub access
 

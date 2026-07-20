@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and discussion
+    url: https://github.com/vietIT2002/practical-python-projects/discussions
+    about: Ask questions and discuss ideas (once Discussions is enabled).
+  - name: Report a security vulnerability
+    url: https://github.com/vietIT2002/practical-python-projects/security/advisories/new
+    about: Report security issues privately. Do not open a public issue.
