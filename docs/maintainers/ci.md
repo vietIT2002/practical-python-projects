@@ -6,7 +6,7 @@ every push to `main`. The workflow is defined in
 
 ## What runs
 
-A single job, **`quality`**, runs once per supported Python version using a
+The root **`quality`** job runs once per supported Python version using a
 matrix. Each run performs, in order:
 
 | Step | Command | Local equivalent |
@@ -17,10 +17,12 @@ matrix. Each run performs, in order:
 | Linting | `uv run ruff check .` | same |
 | Type checking | `uv run mypy .` | same |
 | Tests + coverage | `uv run pytest --cov --cov-branch --cov-fail-under=85` | `uv run pytest --cov --cov-branch` |
-| Structure validation | `uv run python scripts/check_repository.py --full` | same |
+| Structure validation | `uv run python scripts/check_repository.py` | same |
 | Metadata validation | `uv run python scripts/validate_project_metadata.py` | same |
+| Internal links | `uv run python scripts/check_internal_links.py` | same |
+| Generated catalogs current | `uv run python scripts/generate_project_index.py --check` | same |
 
-To reproduce the full CI run locally from a clean clone:
+To reproduce the root CI job locally from a clean clone:
 
 ```sh
 uv sync --group dev
@@ -29,21 +31,34 @@ uv run ruff format --check .
 uv run ruff check .
 uv run mypy .
 uv run pytest --cov --cov-branch --cov-report=term-missing --cov-fail-under=85
-uv run python scripts/check_repository.py --full
+uv run python scripts/check_repository.py
 uv run python scripts/validate_project_metadata.py
+uv run python scripts/check_internal_links.py
+uv run python scripts/generate_project_index.py --check
+```
+
+Self-contained projects (their own dependencies) run their checks in a separate
+job from their own directory. For example, the URL Shortener API:
+
+```sh
+cd intermediate/01-url-shortener-api
+uv sync --group dev
+uv run ruff format --check . && uv run ruff check . && uv run mypy .
+uv run alembic upgrade head
+uv run pytest --cov --cov-branch
 ```
 
 ## Required status checks
 
-The job runs across the supported Python matrix, producing these check names:
+The workflow has two jobs, each across the supported Python matrix, producing
+these stable check names:
 
-- `quality (py3.12)`
-- `quality (py3.13)`
-- `quality (py3.14)`
+- `quality (py3.12)`, `quality (py3.13)`, `quality (py3.14)`
+- `url-shortener-api (py3.12)`, `url-shortener-api (py3.13)`,
+  `url-shortener-api (py3.14)`
 
-These names are stable and are the ones to require in a branch protection rule
-or ruleset (a maintainer action; see
-[assumptions](assumptions.md#actions-that-require-github-access)).
+These are the checks required by the `main` branch protection rule (a maintainer
+action; see [GitHub settings](github-settings.md)).
 
 ## Design notes
 

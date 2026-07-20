@@ -1,13 +1,13 @@
 """Deterministic structural checks for the repository.
 
 These checks guard the conventions documented in ``docs/repository-map.md`` so
-that broken navigation or a mis-named project folder fails fast, locally and in
-continuous integration, instead of drifting silently.
+that a missing landing page or a mis-named project folder fails fast, locally
+and in continuous integration. (Markdown links are checked separately by
+``scripts/check_internal_links.py``.)
 
 Run it from the repository root:
 
-    python scripts/check_repository.py          # fast structural checks
-    python scripts/check_repository.py --full    # also verify Markdown links
+    python scripts/check_repository.py
 
 The command prints one problem per line and exits non-zero if any check fails.
 """
@@ -26,10 +26,6 @@ LEVELS = ("beginner", "intermediate", "advanced")
 
 #: Project folders are named ``NN-kebab-case-slug`` (see ADR-0003).
 PROJECT_NAME = re.compile(r"^\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$")
-
-#: Directories excluded from Markdown link scanning.
-_LINK_EXCLUDE = {".git", ".venv", ".ai", "__pycache__"}
-_MD_LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 
 
 def check_required_files(root: Path) -> list[str]:
@@ -76,51 +72,17 @@ def check_project_naming(root: Path) -> list[str]:
     return problems
 
 
-def _markdown_files(root: Path) -> list[Path]:
-    return [
-        path
-        for path in root.rglob("*.md")
-        if not any(part in _LINK_EXCLUDE for part in path.relative_to(root).parts)
-    ]
-
-
-def check_markdown_links(root: Path) -> list[str]:
-    """Report relative Markdown links that point at missing files."""
-    problems: list[str] = []
-    for markdown in _markdown_files(root):
-        for target in _MD_LINK.findall(markdown.read_text(encoding="utf-8")):
-            target = target.strip()
-            if target.startswith(("http://", "https://", "mailto:", "#")):
-                continue
-            path_part = target.partition("#")[0]
-            if not path_part:
-                continue
-            if not (markdown.parent / path_part).exists():
-                problems.append(
-                    f"{markdown.relative_to(root)}: broken link -> {target}"
-                )
-    return problems
-
-
-def run_checks(root: Path, *, full: bool = False) -> list[str]:
+def run_checks(root: Path) -> list[str]:
     """Run all structural checks and return a combined list of problems."""
-    problems = [
+    return [
         *check_required_files(root),
         *check_level_pages(root),
         *check_project_naming(root),
     ]
-    if full:
-        problems.extend(check_markdown_links(root))
-    return problems
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--full",
-        action="store_true",
-        help="also verify relative Markdown links (slower)",
-    )
     parser.add_argument(
         "--root",
         type=Path,
@@ -129,7 +91,7 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv)
 
-    problems = run_checks(args.root, full=args.full)
+    problems = run_checks(args.root)
     if problems:
         for problem in problems:
             print(problem)

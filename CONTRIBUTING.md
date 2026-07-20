@@ -43,9 +43,14 @@ uv run ruff format --check .
 uv run ruff check .
 uv run mypy .
 uv run pytest --cov --cov-branch
-uv run python scripts/check_repository.py --full
+uv run python scripts/check_repository.py
 uv run python scripts/validate_project_metadata.py
+uv run python scripts/check_internal_links.py
+uv run python scripts/generate_project_index.py --check
 ```
+
+If you add or change a project, regenerate the catalogs with
+`uv run python scripts/generate_project_index.py`.
 
 Auto-fix formatting and lint issues with `uv run ruff format .` and
 `uv run ruff check --fix .`.

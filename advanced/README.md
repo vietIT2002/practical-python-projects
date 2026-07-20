@@ -16,11 +16,13 @@ external boundaries with fakes, and reasoning about failure and security.
 
 ## Projects
 
-Projects are added incrementally. See the [roadmap](../docs/roadmap.md) for what
-is planned, and the [learning paths](../docs/learning-paths.md) for a suggested
-order.
+<!-- project-index:start -->
+_No projects published in this level yet._
+<!-- project-index:end -->
 
-_No projects are published in this level yet._
+More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for
+what is planned, and the [learning paths](../docs/learning-paths.md) for a
+suggested order.
 
 ## How this level is organised
 

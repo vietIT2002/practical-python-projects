@@ -53,10 +53,16 @@ jobs:
           --cov --cov-branch --cov-report=term-missing --cov-fail-under=85
 
       - name: Validate repository structure
-        run: uv run python scripts/check_repository.py --full
+        run: uv run python scripts/check_repository.py
 
       - name: Validate project metadata
         run: uv run python scripts/validate_project_metadata.py
+
+      - name: Check internal Markdown links
+        run: uv run python scripts/check_internal_links.py
+
+      - name: Check generated catalogs are up to date
+        run: uv run python scripts/generate_project_index.py --check
 
   url-shortener-api:
     name: url-shortener-api (py${{ matrix.python-version }})

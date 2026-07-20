@@ -15,10 +15,12 @@ and running a script from the terminal.
 
 ## Projects
 
-| Project | What you build | Concepts |
-|---|---|---|
-| [01 · Expense Tracker CLI](01-expense-tracker/README.md) | A command-line expense tracker with exact money handling and safe storage | `Decimal`, dataclasses, JSON, validation, atomic writes |
-| [02 · Safe File Organizer CLI](02-file-organizer/README.md) | A file organiser with a dry-run default, no overwrites, and undo | `pathlib`, dry-run, manifests, reversible operations |
+<!-- project-index:start -->
+| Project | What you build |
+|---|---|
+| [Expense Tracker CLI](01-expense-tracker/README.md) | Track expenses from the command line with exact money handling and safe storage. |
+| [Safe File Organizer CLI](02-file-organizer/README.md) | Organise files into category folders with a dry-run default, no overwrites, and undo. |
+<!-- project-index:end -->
 
 More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for
 what is planned, and the [learning paths](../docs/learning-paths.md) for a

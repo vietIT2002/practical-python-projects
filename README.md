@@ -43,6 +43,19 @@ Projects are grouped by difficulty:
 New here? A [learning path](docs/learning-paths.md) gives you a suggested order
 instead of picking at random.
 
+### Available projects
+
+<!-- project-index:start -->
+| Project | Level | What you build |
+|---|---|---|
+| [Expense Tracker CLI](beginner/01-expense-tracker/README.md) | beginner | Track expenses from the command line with exact money handling and safe storage. |
+| [Safe File Organizer CLI](beginner/02-file-organizer/README.md) | beginner | Organise files into category folders with a dry-run default, no overwrites, and undo. |
+| [URL Shortener API](intermediate/01-url-shortener-api/README.md) | intermediate | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests. |
+<!-- project-index:end -->
+
+The table above is generated from each project's metadata; see the full
+[project catalog](docs/project-catalog.md).
+
 ## Quick start
 
 You need [Python 3.12+](https://www.python.org/downloads/),

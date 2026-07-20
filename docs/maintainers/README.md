@@ -12,4 +12,6 @@ learners do not need to read this section.
   status check names, local equivalents, and how to diagnose failures.
 - [GitHub settings](github-settings.md) — exact manual steps for settings that
   live in the GitHub interface (topics, private reporting, rulesets, and more).
+- [Generated content](generated-content.md) — which files are generated and how
+  to regenerate them.
 - [Labels](labels.md) — the issue and pull-request label taxonomy.

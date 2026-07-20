@@ -8,7 +8,6 @@ import pytest
 
 from scripts.check_repository import (
     LEVELS,
-    check_markdown_links,
     check_project_naming,
     main,
     run_checks,
@@ -75,24 +74,6 @@ def test_well_named_project_with_readme_passes(tmp_path: Path) -> None:
     project.mkdir()
     (project / "README.md").write_text("# ok\n", encoding="utf-8")
     assert check_project_naming(tmp_path) == []
-
-
-def test_full_mode_detects_broken_markdown_link(tmp_path: Path) -> None:
-    _make_valid_repo(tmp_path)
-    (tmp_path / "README.md").write_text(
-        "See [missing](docs/nope.md) and [ok](LICENSE).\n", encoding="utf-8"
-    )
-    assert check_markdown_links(tmp_path)
-    assert any("broken link" in problem for problem in run_checks(tmp_path, full=True))
-
-
-def test_full_mode_ignores_external_and_anchor_links(tmp_path: Path) -> None:
-    _make_valid_repo(tmp_path)
-    (tmp_path / "README.md").write_text(
-        "[web](https://example.com) [top](#intro) [mail](mailto:a@b.c)\n",
-        encoding="utf-8",
-    )
-    assert check_markdown_links(tmp_path) == []
 
 
 def test_main_returns_zero_on_valid_repo(
