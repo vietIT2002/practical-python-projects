@@ -1,0 +1,14 @@
+schema_version = 1
+id = "intermediate-01"
+slug = "url-shortener-api"
+title = "URL Shortener API"
+level = "intermediate"
+status = "complete"
+featured = true
+summary = "A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests."
+python = ">=3.12"
+interfaces = ["api"]
+concepts = ["fastapi", "sqlalchemy", "alembic", "pydantic-settings", "rest-api"]
+prerequisites = ["functions", "classes", "http-basics"]
+tags = ["api", "fastapi", "web", "database"]
+estimated_minutes = 420
