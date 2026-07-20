@@ -54,7 +54,10 @@ uv run mypy .                  # static type checking
 uv run pytest                  # tests
 uv lock --check                # lockfile is up to date
 uv run pip-audit               # dependency vulnerability audit
+uv run python scripts/check_repository.py --full   # structure + link checks
 ```
+
+These are the same checks enforced in [continuous integration](../maintainers/ci.md).
 
 To auto-fix formatting and lint issues:
 
