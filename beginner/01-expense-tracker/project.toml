@@ -1,0 +1,14 @@
+schema_version = 1
+id = "beginner-01"
+slug = "expense-tracker"
+title = "Expense Tracker CLI"
+level = "beginner"
+status = "complete"
+featured = true
+summary = "Track expenses from the command line with exact money handling and safe storage."
+python = ">=3.12"
+interfaces = ["cli"]
+concepts = ["decimal", "dataclasses", "json", "validation", "atomic-write"]
+prerequisites = ["functions", "basic classes"]
+tags = ["cli", "files", "money"]
+estimated_minutes = 180

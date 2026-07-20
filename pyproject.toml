@@ -34,6 +34,9 @@ extend-exclude = [".ai"]
 # Sensible, teachable default rule set. Individual projects may extend this.
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "C4", "PTH", "RUF"]
 
+[tool.ruff.lint.isort]
+known-first-party = ["expense_tracker", "scripts"]
+
 [tool.ruff.format]
 docstring-code-format = true
 
@@ -43,13 +46,15 @@ strict = true
 warn_unused_configs = true
 warn_redundant_casts = true
 warn_unused_ignores = true
+explicit_package_bases = true
+mypy_path = "beginner/01-expense-tracker/src"
 exclude = ['^\.venv/', '^\.ai/']
 
 [tool.pytest.ini_options]
 minversion = "8.0"
 addopts = "-ra --strict-markers --strict-config"
-testpaths = ["tests"]
-pythonpath = ["."]
+testpaths = ["tests", "beginner/01-expense-tracker/tests"]
+pythonpath = [".", "beginner/01-expense-tracker/src"]
 markers = [
     "integration: local multi-component test",
     "network: requires external network access; excluded by default",
@@ -58,7 +63,7 @@ markers = [
 
 [tool.coverage.run]
 branch = true
-source = ["scripts"]
+source = ["scripts", "expense_tracker"]
 
 [tool.coverage.report]
 show_missing = true

@@ -15,11 +15,13 @@ and running a script from the terminal.
 
 ## Projects
 
-Projects are added incrementally. See the [roadmap](../docs/roadmap.md) for what
-is planned, and the [learning paths](../docs/learning-paths.md) for a suggested
-order.
+| Project | What you build | Concepts |
+|---|---|---|
+| [01 · Expense Tracker CLI](01-expense-tracker/README.md) | A command-line expense tracker with exact money handling and safe storage | `Decimal`, dataclasses, JSON, validation, atomic writes |
 
-_No projects are published in this level yet._
+More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for
+what is planned, and the [learning paths](../docs/learning-paths.md) for a
+suggested order.
 
 ## How this level is organised
 
