@@ -1,0 +1,22 @@
+[
+  {
+    "id": "b6990d2f",
+    "amount": "12.50",
+    "category": "food",
+    "date": "2026-07-18",
+    "note": "team lunch"
+  },
+  {
+    "id": "f30f9fe1",
+    "amount": "40.00",
+    "category": "travel",
+    "date": "2026-07-20"
+  },
+  {
+    "id": "a1c3e5f7",
+    "amount": "9.99",
+    "category": "subscriptions",
+    "date": "2026-08-01",
+    "note": "music"
+  }
+]

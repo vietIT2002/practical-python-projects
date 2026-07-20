@@ -22,7 +22,7 @@ See the [roadmap](roadmap.md) for status, and the level pages
 Build confidence with the language and good habits (structure, tests, clear
 CLIs).
 
-1. Expense Tracker CLI _(planned, beginner)_
+1. [Expense Tracker CLI](../beginner/01-expense-tracker/README.md) _(beginner)_
 2. Safe File Organizer CLI _(planned, beginner)_
 
 ## Path 2: Automation and tooling
