@@ -11,7 +11,9 @@ Where everything lives, how projects are named, and what "published" means.
 | `docs/architecture/` | Architecture Decision Records (the "why" behind the structure). |
 | `docs/getting-started/` | Environment setup and quality-command reference. |
 | `docs/maintainers/` | Operational notes for maintainers. |
+| `scripts/` | Repository tooling, including the structural validation script. |
 | `tests/` | Tests for the repository's own tooling and shared invariants. |
+| `.github/` | Continuous integration workflow and Dependabot configuration. |
 | `pyproject.toml`, `uv.lock` | The root tooling project: shared development dependencies and configuration. |
 | `.pre-commit-config.yaml` | Git hooks that run the same checks as the quality commands. |
 | `LICENSE` | The repository license (MIT). |
@@ -28,6 +30,8 @@ expressed directly in tooling and documentation:
   (Ruff and mypy) and enforced by `.pre-commit-config.yaml`.
 - **Testing** — pytest configuration in `pyproject.toml`.
 - **Structural decisions** — the [architecture decisions](architecture/README.md).
+- **Structural conventions** — enforced by `scripts/check_repository.py` and
+  checked in [continuous integration](maintainers/ci.md).
 - **Setup and commands** — the
   [development environment guide](getting-started/development-environment.md).
 

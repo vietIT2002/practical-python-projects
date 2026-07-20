@@ -49,6 +49,7 @@ exclude = ['^\.venv/', '^\.ai/']
 minversion = "8.0"
 addopts = "-ra --strict-markers --strict-config"
 testpaths = ["tests"]
+pythonpath = ["."]
 markers = [
     "integration: local multi-component test",
     "network: requires external network access; excluded by default",
@@ -57,6 +58,7 @@ markers = [
 
 [tool.coverage.run]
 branch = true
+source = ["scripts"]
 
 [tool.coverage.report]
 show_missing = true
