@@ -16,9 +16,11 @@ packages, reading tracebacks, and running tests.
 
 ## Projects
 
-| Project | What you build | Concepts |
-|---|---|---|
-| [01 · URL Shortener API](01-url-shortener-api/README.md) | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests | FastAPI, SQLAlchemy 2.0, Alembic, layered architecture |
+<!-- project-index:start -->
+| Project | What you build |
+|---|---|
+| [URL Shortener API](01-url-shortener-api/README.md) | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests. |
+<!-- project-index:end -->
 
 More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for
 what is planned, and the [learning paths](../docs/learning-paths.md) for a

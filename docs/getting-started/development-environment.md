@@ -54,8 +54,10 @@ uv run mypy .                  # static type checking
 uv run pytest                  # tests
 uv lock --check                # lockfile is up to date
 uv run pip-audit               # dependency vulnerability audit
-uv run python scripts/check_repository.py --full   # structure + link checks
+uv run python scripts/check_repository.py          # repository structure
 uv run python scripts/validate_project_metadata.py # project metadata
+uv run python scripts/check_internal_links.py      # internal Markdown links
+uv run python scripts/generate_project_index.py --check  # catalogs up to date
 ```
 
 These are the same checks enforced in [continuous integration](../maintainers/ci.md).

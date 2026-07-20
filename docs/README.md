@@ -12,6 +12,8 @@ Everything you need to understand, use, and contribute to this repository.
   rules and project status definitions.
 - [Project metadata](project-metadata.md) — the `project.toml` contract for
   every project.
+- [Project catalog](project-catalog.md) — every published project, generated
+  from metadata.
 - [Roadmap](roadmap.md) — what exists now and what is planned.
 
 ## Deeper reference
