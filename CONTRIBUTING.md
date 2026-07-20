@@ -44,6 +44,7 @@ uv run ruff check .
 uv run mypy .
 uv run pytest --cov --cov-branch
 uv run python scripts/check_repository.py --full
+uv run python scripts/validate_project_metadata.py
 ```
 
 Auto-fix formatting and lint issues with `uv run ruff format .` and
@@ -52,8 +53,10 @@ Auto-fix formatting and lint issues with `uv run ruff format .` and
 ## Proposing a new project
 
 1. Open a **New project proposal** issue so the scope can be discussed first.
-2. Follow the folder convention `<level>/NN-project-slug/` and the
-   [repository map](docs/repository-map.md) conventions.
+2. Copy the template from [`templates/project/`](templates/project/) and follow
+   the full workflow in
+   [adding a project](docs/maintainers/adding-a-project.md). Project metadata
+   must follow the [metadata contract](docs/project-metadata.md).
 3. A project is considered complete only when it meets the
    [draft vs published](docs/repository-map.md#draft-vs-published) bar: a full
    README, tests for happy-path, invalid-input, and boundary behaviour, and

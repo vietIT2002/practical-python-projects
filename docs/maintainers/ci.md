@@ -18,6 +18,7 @@ matrix. Each run performs, in order:
 | Type checking | `uv run mypy .` | same |
 | Tests + coverage | `uv run pytest --cov --cov-branch --cov-fail-under=85` | `uv run pytest --cov --cov-branch` |
 | Structure validation | `uv run python scripts/check_repository.py --full` | same |
+| Metadata validation | `uv run python scripts/validate_project_metadata.py` | same |
 
 To reproduce the full CI run locally from a clean clone:
 
@@ -29,6 +30,7 @@ uv run ruff check .
 uv run mypy .
 uv run pytest --cov --cov-branch --cov-report=term-missing --cov-fail-under=85
 uv run python scripts/check_repository.py --full
+uv run python scripts/validate_project_metadata.py
 ```
 
 ## Required status checks

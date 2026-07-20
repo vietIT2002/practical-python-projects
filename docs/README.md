@@ -10,6 +10,8 @@ Everything you need to understand, use, and contribute to this repository.
   goal (fundamentals, automation, backend, AI).
 - [Repository map](repository-map.md) — where everything lives, plus naming
   rules and project status definitions.
+- [Project metadata](project-metadata.md) — the `project.toml` contract for
+  every project.
 - [Roadmap](roadmap.md) — what exists now and what is planned.
 
 ## Deeper reference

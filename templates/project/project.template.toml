@@ -1,0 +1,18 @@
+# Copy this file to <level>/NN-<slug>/project.toml and fill in every value.
+# The full contract is documented in docs/project-metadata.md and enforced by
+# scripts/validate_project_metadata.py.
+
+schema_version = 1
+id = "level-NN"           # e.g. "beginner-01"; must match the folder
+slug = "project-slug"     # kebab-case; must match the folder slug
+title = "Human Readable Title"
+level = "beginner"        # beginner | intermediate | advanced
+status = "draft"          # draft until it meets the Definition of Done, then complete
+featured = false          # only a complete project may be featured
+summary = "One sentence describing what the project does."
+python = ">=3.12"
+interfaces = ["cli"]      # any of: cli, api, library, pipeline
+concepts = ["validation"] # key ideas the project teaches
+prerequisites = ["functions"]
+tags = ["cli"]
+estimated_minutes = 120

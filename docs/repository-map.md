@@ -11,8 +11,9 @@ Where everything lives, how projects are named, and what "published" means.
 | `docs/architecture/` | Architecture Decision Records (the "why" behind the structure). |
 | `docs/getting-started/` | Environment setup and quality-command reference. |
 | `docs/maintainers/` | Operational notes for maintainers. |
+| `templates/project/` | Copyable starting point for a new project. See [adding a project](maintainers/adding-a-project.md). |
 | `assets/brand/` | The visual identity (logo, banner, social preview). See [brand guidelines](brand-guidelines.md). |
-| `scripts/` | Repository tooling, including the structural validation script. |
+| `scripts/` | Repository tooling: structural validation and project-metadata validation. |
 | `tests/` | Tests for the repository's own tooling and shared invariants. |
 | `.github/` | Continuous integration workflow and Dependabot configuration. |
 | `pyproject.toml`, `uv.lock` | The root tooling project: shared development dependencies and configuration. |
@@ -38,7 +39,8 @@ expressed directly in tooling and documentation:
 
 ## Project naming and numbering
 
-Each project folder is named:
+Each project carries a `project.toml` metadata file; the rules are documented in
+[project metadata](project-metadata.md). Each project folder is named:
 
 ```text
 <level>/<two-digit-id>-<kebab-case-slug>/

@@ -1,0 +1,23 @@
+# Copy to <level>/NN-<slug>/pyproject.toml for a project that uses third-party
+# runtime dependencies (see ADR-0002). Standard-library-only beginner projects
+# do not need this file.
+
+[project]
+name = "project-slug"
+version = "0.1.0"
+description = "One sentence describing what the project does."
+readme = "README.md"
+requires-python = ">=3.12"
+
+# Runtime dependencies for this project (keep them minimal and justified).
+dependencies = []
+
+# This project is a self-contained example, not a distributable package.
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+]
