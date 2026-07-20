@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="Practical Python Projects social preview">
+  <title>Practical Python Projects</title>
+  <defs>
+    <linearGradient id="sp-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#152449"/>
+    </linearGradient>
+    <linearGradient id="sp-tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#sp-bg)"/>
+  <!-- Mark -->
+  <g transform="translate(160 176)">
+    <rect width="200" height="200" rx="44" fill="url(#sp-tile)"/>
+    <path d="M61 64 L95 100 L61 136" fill="none" stroke="#38BDF8" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="110" y="117" width="16" height="19" rx="4" fill="#2DD4BF"/>
+    <rect x="131" y="101" width="16" height="35" rx="4" fill="#2DD4BF"/>
+    <rect x="152" y="83" width="16" height="53" rx="4" fill="#2DD4BF"/>
+  </g>
+  <!-- Text -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="420" y="286" font-size="72" font-weight="700" fill="#F8FAFC">Practical</text>
+    <text x="420" y="368" font-size="72" font-weight="700" fill="#F8FAFC">Python Projects</text>
+    <text x="422" y="430" font-size="30" font-weight="400" fill="#93C5FD">Complete, tested projects — from fundamentals</text>
+    <text x="422" y="470" font-size="30" font-weight="400" fill="#93C5FD">to production-minded engineering.</text>
+  </g>
+</svg>

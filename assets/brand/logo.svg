@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Practical Python Projects logo">
+  <title>Practical Python Projects logo</title>
+  <defs>
+    <linearGradient id="ppp-tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#ppp-tile)"/>
+  <!-- Terminal-style prompt chevron: "build it yourself" -->
+  <path d="M78 82 L122 128 L78 174" fill="none" stroke="#38BDF8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Ascending bars: steady learning progression -->
+  <rect x="140" y="150" width="20" height="24" rx="5" fill="#2DD4BF"/>
+  <rect x="166" y="130" width="20" height="44" rx="5" fill="#2DD4BF"/>
+  <rect x="192" y="106" width="20" height="68" rx="5" fill="#2DD4BF"/>
+</svg>

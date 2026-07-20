@@ -13,9 +13,12 @@ with exact steps so nothing is missed. None of them are performed automatically.
 
 ## Topics
 
-In the **About** panel, add topics such as:
-`python`, `learning`, `tutorial`, `projects`, `beginner-friendly`, `cli`,
-`testing`, `uv`, `education`.
+In the **About** panel, add topics:
+`python`, `python-projects`, `learn-python`, `beginner-friendly`, `tutorial`,
+`cli`, `testing`, `uv`, `automation`, `open-source`, `education`.
+
+Add `fastapi` only once a FastAPI-based project is published, so topics stay
+truthful.
 
 ## Issues and Discussions
 
@@ -75,5 +78,7 @@ issue templates and release-note configuration.
 
 ## Social preview
 
-**Settings → General → Social preview**: upload a 1280×640 image once branding
-assets exist. Until then, leave it unset rather than uploading a placeholder.
+**Settings → General → Social preview**: upload
+[`assets/brand/social-preview.png`](../../assets/brand/social-preview.png)
+(1280×640, under GitHub's size limit). To regenerate it, see
+[brand guidelines](../brand-guidelines.md).
