@@ -1,0 +1,63 @@
+[project]
+name = "practical-python-projects"
+version = "0.0.0"
+description = "Root tooling for the Practical Python Projects repository."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{ name = "vietIT2002" }]
+
+# The repository root is a non-published tooling project, not a distributable
+# package. It owns shared development tooling, quality gates, and validation for
+# the collection of independent learning projects (see ADR-0001).
+[tool.uv]
+package = false
+
+# Development toolchain shared across the repository. Runtime dependencies live
+# inside individual learning projects, never here (see ADR-0002).
+[dependency-groups]
+dev = [
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "pre-commit>=3.8",
+    "pip-audit>=2.7",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+extend-exclude = [".ai"]
+
+[tool.ruff.lint]
+# Sensible, teachable default rule set. Individual projects may extend this.
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "C4", "PTH", "RUF"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+exclude = ['^\.venv/', '^\.ai/']
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra --strict-markers --strict-config"
+testpaths = ["tests"]
+markers = [
+    "integration: local multi-component test",
+    "network: requires external network access; excluded by default",
+    "slow: intentionally slower than the normal development loop",
+]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
