@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# uv
+# The lockfile (uv.lock) is intentionally committed; the environment is not.
+
+# Test, coverage, and caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.cache/
+
+# Environment files (never commit real secrets)
+.env
+.env.*
+!.env.example
+
+# Local databases and generated artifacts
+*.db
+*.sqlite
+*.sqlite3
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Internal build scaffolding (kept locally, not part of the public repository)
+.ai/
+AGENTS.md
