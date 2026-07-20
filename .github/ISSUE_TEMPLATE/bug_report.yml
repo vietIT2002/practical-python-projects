@@ -1,0 +1,52 @@
+name: Bug report
+description: Report something that is broken or behaves incorrectly.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please do **not** report
+        security vulnerabilities here — see our security policy instead.
+  - type: input
+    id: project
+    attributes:
+      label: Affected project or area
+      description: Which project or part of the repository is affected?
+      placeholder: e.g. beginner/01-expense-tracker-cli, or "repository tooling"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The exact commands and actions that trigger the problem.
+      placeholder: |
+        1. Run `...`
+        2. ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, and uv version.
+      placeholder: |
+        - OS:
+        - Python (`python --version`):
+        - uv (`uv --version`):
+    validations:
+      required: true

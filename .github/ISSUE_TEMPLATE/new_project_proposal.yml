@@ -1,0 +1,52 @@
+name: New project proposal
+description: Propose a new learning project for the catalog.
+labels: ["project-proposal", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a project here before building it, so the scope and level can be
+        discussed. See the contribution guide and repository map first.
+  - type: input
+    id: title
+    attributes:
+      label: Proposed project title
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Difficulty level
+      options:
+        - beginner
+        - intermediate
+        - advanced
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve or skill does it teach?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope
+      description: Core features and explicit non-goals to keep it focused.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Standard library only, or which third-party packages and why?
+    validations:
+      required: true
+  - type: checkboxes
+    id: conventions
+    attributes:
+      label: Conventions
+      options:
+        - label: I have read the contributing guide and repository map.
+          required: true
