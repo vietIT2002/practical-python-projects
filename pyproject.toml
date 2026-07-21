@@ -41,6 +41,7 @@ known-first-party = [
     "expense_tracker",
     "file_organizer",
     "number_guessing_game",
+    "password_generator",
     "scripts",
 ]
 
@@ -58,6 +59,7 @@ mypy_path = [
     "beginner/01-expense-tracker/src",
     "beginner/02-file-organizer/src",
     "beginner/03-number-guessing-game/src",
+    "beginner/04-password-generator/src",
 ]
 # Project source is type-checked; per-project test suites share basenames
 # (e.g. test_cli.py) across projects, so they are checked by pytest, not mypy.
@@ -77,12 +79,14 @@ testpaths = [
     "beginner/01-expense-tracker/tests",
     "beginner/02-file-organizer/tests",
     "beginner/03-number-guessing-game/tests",
+    "beginner/04-password-generator/tests",
 ]
 pythonpath = [
     ".",
     "beginner/01-expense-tracker/src",
     "beginner/02-file-organizer/src",
     "beginner/03-number-guessing-game/src",
+    "beginner/04-password-generator/src",
 ]
 markers = [
     "integration: local multi-component test",
@@ -92,7 +96,13 @@ markers = [
 
 [tool.coverage.run]
 branch = true
-source = ["scripts", "expense_tracker", "file_organizer", "number_guessing_game"]
+source = [
+    "scripts",
+    "expense_tracker",
+    "file_organizer",
+    "number_guessing_game",
+    "password_generator",
+]
 
 [tool.coverage.report]
 show_missing = true

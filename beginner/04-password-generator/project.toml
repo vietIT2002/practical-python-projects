@@ -1,0 +1,14 @@
+schema_version = 1
+id = "beginner-04"
+slug = "password-generator"
+title = "Secure Password Generator"
+level = "beginner"
+status = "complete"
+featured = false
+summary = "Generate strong random passwords with secrets, guaranteeing character-group requirements."
+python = ">=3.12"
+interfaces = ["cli"]
+concepts = ["secrets", "strings", "policy-validation", "cli-options"]
+prerequisites = ["functions"]
+tags = ["cli", "security"]
+estimated_minutes = 120

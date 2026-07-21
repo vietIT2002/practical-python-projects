@@ -12,6 +12,7 @@ generated section by hand. See [generated content](maintainers/generated-content
 | [Expense Tracker CLI](../beginner/01-expense-tracker/README.md) | Track expenses from the command line with exact money handling and safe storage. |
 | [Safe File Organizer CLI](../beginner/02-file-organizer/README.md) | Organise files into category folders with a dry-run default, no overwrites, and undo. |
 | [Number Guessing Game](../beginner/03-number-guessing-game/README.md) | Guess the secret number with difficulty levels and fully deterministic, testable logic. |
+| [Secure Password Generator](../beginner/04-password-generator/README.md) | Generate strong random passwords with secrets, guaranteeing character-group requirements. |
 
 ### Intermediate
 

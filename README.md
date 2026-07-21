@@ -51,6 +51,7 @@ instead of picking at random.
 | [Expense Tracker CLI](beginner/01-expense-tracker/README.md) | beginner | Track expenses from the command line with exact money handling and safe storage. |
 | [Safe File Organizer CLI](beginner/02-file-organizer/README.md) | beginner | Organise files into category folders with a dry-run default, no overwrites, and undo. |
 | [Number Guessing Game](beginner/03-number-guessing-game/README.md) | beginner | Guess the secret number with difficulty levels and fully deterministic, testable logic. |
+| [Secure Password Generator](beginner/04-password-generator/README.md) | beginner | Generate strong random passwords with secrets, guaranteeing character-group requirements. |
 | [URL Shortener API](intermediate/01-url-shortener-api/README.md) | intermediate | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests. |
 <!-- project-index:end -->
 
