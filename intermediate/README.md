@@ -21,6 +21,7 @@ packages, reading tracebacks, and running tests.
 |---|---|
 | [URL Shortener API](01-url-shortener-api/README.md) | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests. |
 | [Weather CLI](02-weather-cli/README.md) | A command-line weather client (Open-Meteo, no API key) with unit options, caching, and mocked tests. |
+| [Website Change Monitor](03-website-change-monitor/README.md) | Detect changes to configured web pages with a one-shot, cron-friendly CLI and responsible fetching. |
 <!-- project-index:end -->
 
 More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for

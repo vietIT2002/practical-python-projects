@@ -1,0 +1,14 @@
+schema_version = 1
+id = "intermediate-03"
+slug = "website-change-monitor"
+title = "Website Change Monitor"
+level = "intermediate"
+status = "complete"
+featured = false
+summary = "Detect changes to configured web pages with a one-shot, cron-friendly CLI and responsible fetching."
+python = ">=3.12"
+interfaces = ["cli"]
+concepts = ["http-client", "hashing", "ssrf-mitigation", "state-persistence", "exit-codes"]
+prerequisites = ["functions", "classes"]
+tags = ["cli", "http", "automation", "monitoring"]
+estimated_minutes = 300
