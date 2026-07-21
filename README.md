@@ -90,9 +90,10 @@ Contributions are welcome. Start with the [contributing guide](CONTRIBUTING.md),
 and please follow the [Code of Conduct](CODE_OF_CONDUCT.md). For security issues,
 use the private route in [SECURITY.md](SECURITY.md).
 
-## Roadmap
+## Roadmap and releases
 
-See the [roadmap](docs/roadmap.md) for what exists now and what is planned.
+See the [roadmap](docs/roadmap.md) for what is planned and the
+[changelog](CHANGELOG.md) for what has shipped.
 
 ## License
 

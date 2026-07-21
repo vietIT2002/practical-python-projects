@@ -15,6 +15,7 @@ Everything you need to understand, use, and contribute to this repository.
 - [Project catalog](project-catalog.md) — every published project, generated
   from metadata.
 - [Roadmap](roadmap.md) — what exists now and what is planned.
+- [Release notes](releases/v0.1.0.md) — what shipped in each release.
 
 ## Deeper reference
 
