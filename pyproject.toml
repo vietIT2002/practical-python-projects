@@ -37,7 +37,12 @@ extend-exclude = [".ai", "intermediate/01-url-shortener-api"]
 select = ["E", "F", "W", "I", "UP", "B", "SIM", "C4", "PTH", "RUF"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["expense_tracker", "file_organizer", "scripts"]
+known-first-party = [
+    "expense_tracker",
+    "file_organizer",
+    "number_guessing_game",
+    "scripts",
+]
 
 [tool.ruff.format]
 docstring-code-format = true
@@ -52,6 +57,7 @@ explicit_package_bases = true
 mypy_path = [
     "beginner/01-expense-tracker/src",
     "beginner/02-file-organizer/src",
+    "beginner/03-number-guessing-game/src",
 ]
 # Project source is type-checked; per-project test suites share basenames
 # (e.g. test_cli.py) across projects, so they are checked by pytest, not mypy.
@@ -70,11 +76,13 @@ testpaths = [
     "tests",
     "beginner/01-expense-tracker/tests",
     "beginner/02-file-organizer/tests",
+    "beginner/03-number-guessing-game/tests",
 ]
 pythonpath = [
     ".",
     "beginner/01-expense-tracker/src",
     "beginner/02-file-organizer/src",
+    "beginner/03-number-guessing-game/src",
 ]
 markers = [
     "integration: local multi-component test",
@@ -84,7 +92,7 @@ markers = [
 
 [tool.coverage.run]
 branch = true
-source = ["scripts", "expense_tracker", "file_organizer"]
+source = ["scripts", "expense_tracker", "file_organizer", "number_guessing_game"]
 
 [tool.coverage.report]
 show_missing = true

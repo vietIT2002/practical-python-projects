@@ -1,0 +1,14 @@
+schema_version = 1
+id = "beginner-03"
+slug = "number-guessing-game"
+title = "Number Guessing Game"
+level = "beginner"
+status = "complete"
+featured = false
+summary = "Guess the secret number with difficulty levels and fully deterministic, testable logic."
+python = ">=3.12"
+interfaces = ["cli"]
+concepts = ["control-flow", "input-validation", "dependency-injection", "deterministic-tests"]
+prerequisites = ["functions"]
+tags = ["cli", "game"]
+estimated_minutes = 120

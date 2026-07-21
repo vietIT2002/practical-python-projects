@@ -20,6 +20,7 @@ and running a script from the terminal.
 |---|---|
 | [Expense Tracker CLI](01-expense-tracker/README.md) | Track expenses from the command line with exact money handling and safe storage. |
 | [Safe File Organizer CLI](02-file-organizer/README.md) | Organise files into category folders with a dry-run default, no overwrites, and undo. |
+| [Number Guessing Game](03-number-guessing-game/README.md) | Guess the secret number with difficulty levels and fully deterministic, testable logic. |
 <!-- project-index:end -->
 
 More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for
