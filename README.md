@@ -54,6 +54,7 @@ instead of picking at random.
 | [Secure Password Generator](beginner/04-password-generator/README.md) | beginner | Generate strong random passwords with secrets, guaranteeing character-group requirements. |
 | [Contact Book CLI](beginner/05-contact-book/README.md) | beginner | Manage contacts with CRUD, search, atomic JSON storage, and CSV export. |
 | [URL Shortener API](intermediate/01-url-shortener-api/README.md) | intermediate | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests. |
+| [Weather CLI](intermediate/02-weather-cli/README.md) | intermediate | A command-line weather client (Open-Meteo, no API key) with unit options, caching, and mocked tests. |
 <!-- project-index:end -->
 
 The table above is generated from each project's metadata; see the full

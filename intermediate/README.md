@@ -20,6 +20,7 @@ packages, reading tracebacks, and running tests.
 | Project | What you build |
 |---|---|
 | [URL Shortener API](01-url-shortener-api/README.md) | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests. |
+| [Weather CLI](02-weather-cli/README.md) | A command-line weather client (Open-Meteo, no API key) with unit options, caching, and mocked tests. |
 <!-- project-index:end -->
 
 More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for

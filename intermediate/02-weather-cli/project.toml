@@ -1,0 +1,14 @@
+schema_version = 1
+id = "intermediate-02"
+slug = "weather-cli"
+title = "Weather CLI"
+level = "intermediate"
+status = "complete"
+featured = false
+summary = "A command-line weather client (Open-Meteo, no API key) with unit options, caching, and mocked tests."
+python = ">=3.12"
+interfaces = ["cli"]
+concepts = ["http-client", "api-integration", "timeouts", "caching", "mocked-tests"]
+prerequisites = ["functions", "classes"]
+tags = ["cli", "api", "http"]
+estimated_minutes = 300

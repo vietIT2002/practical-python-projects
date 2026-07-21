@@ -105,3 +105,42 @@ jobs:
 
       - name: Run tests with branch coverage
         run: uv run pytest --cov --cov-branch --cov-report=term-missing
+
+  weather-cli:
+    name: weather-cli (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13", "3.14"]
+    defaults:
+      run:
+        working-directory: intermediate/02-weather-cli
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+          cache-dependency-glob: intermediate/02-weather-cli/uv.lock
+
+      - name: Verify lockfile is up to date
+        run: uv lock --check
+
+      - name: Install dependencies
+        run: uv sync --locked --group dev
+
+      - name: Check formatting (ruff)
+        run: uv run ruff format --check .
+
+      - name: Lint (ruff)
+        run: uv run ruff check .
+
+      - name: Type check (mypy)
+        run: uv run mypy .
+
+      - name: Run tests with branch coverage
+        run: uv run pytest --cov --cov-branch --cov-report=term-missing

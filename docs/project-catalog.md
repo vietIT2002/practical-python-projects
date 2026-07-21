@@ -20,6 +20,7 @@ generated section by hand. See [generated content](maintainers/generated-content
 | Project | What you build |
 |---|---|
 | [URL Shortener API](../intermediate/01-url-shortener-api/README.md) | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests. |
+| [Weather CLI](../intermediate/02-weather-cli/README.md) | A command-line weather client (Open-Meteo, no API key) with unit options, caching, and mocked tests. |
 
 ### Advanced
 

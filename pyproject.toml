@@ -30,7 +30,11 @@ line-length = 88
 target-version = "py312"
 # Self-contained projects (their own deps + lockfile) are checked in their own
 # environment via a dedicated CI job, not by the root toolchain.
-extend-exclude = [".ai", "intermediate/01-url-shortener-api"]
+extend-exclude = [
+    ".ai",
+    "intermediate/01-url-shortener-api",
+    "intermediate/02-weather-cli",
+]
 
 [tool.ruff.lint]
 # Sensible, teachable default rule set. Individual projects may extend this.
@@ -71,6 +75,7 @@ exclude = [
     '/tests/.*',
     '^tests/.*',
     '^intermediate/01-url-shortener-api/',
+    '^intermediate/02-weather-cli/',
 ]
 
 [tool.pytest.ini_options]
