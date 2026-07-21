@@ -52,6 +52,7 @@ instead of picking at random.
 | [Safe File Organizer CLI](beginner/02-file-organizer/README.md) | beginner | Organise files into category folders with a dry-run default, no overwrites, and undo. |
 | [Number Guessing Game](beginner/03-number-guessing-game/README.md) | beginner | Guess the secret number with difficulty levels and fully deterministic, testable logic. |
 | [Secure Password Generator](beginner/04-password-generator/README.md) | beginner | Generate strong random passwords with secrets, guaranteeing character-group requirements. |
+| [Contact Book CLI](beginner/05-contact-book/README.md) | beginner | Manage contacts with CRUD, search, atomic JSON storage, and CSV export. |
 | [URL Shortener API](intermediate/01-url-shortener-api/README.md) | intermediate | A FastAPI URL shortener with SQLAlchemy, migrations, and isolated tests. |
 <!-- project-index:end -->
 

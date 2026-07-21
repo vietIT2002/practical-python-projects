@@ -22,8 +22,11 @@ See the [roadmap](roadmap.md) for status, and the level pages
 Build confidence with the language and good habits (structure, tests, clear
 CLIs).
 
-1. [Expense Tracker CLI](../beginner/01-expense-tracker/README.md) _(beginner)_
-2. [Safe File Organizer CLI](../beginner/02-file-organizer/README.md) _(beginner)_
+1. [Number Guessing Game](../beginner/03-number-guessing-game/README.md) _(beginner)_
+2. [Expense Tracker CLI](../beginner/01-expense-tracker/README.md) _(beginner)_
+3. [Contact Book CLI](../beginner/05-contact-book/README.md) _(beginner)_
+4. [Secure Password Generator](../beginner/04-password-generator/README.md) _(beginner)_
+5. [Safe File Organizer CLI](../beginner/02-file-organizer/README.md) _(beginner)_
 
 ## Path 2: Automation and tooling
 

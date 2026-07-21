@@ -13,6 +13,7 @@ generated section by hand. See [generated content](maintainers/generated-content
 | [Safe File Organizer CLI](../beginner/02-file-organizer/README.md) | Organise files into category folders with a dry-run default, no overwrites, and undo. |
 | [Number Guessing Game](../beginner/03-number-guessing-game/README.md) | Guess the secret number with difficulty levels and fully deterministic, testable logic. |
 | [Secure Password Generator](../beginner/04-password-generator/README.md) | Generate strong random passwords with secrets, guaranteeing character-group requirements. |
+| [Contact Book CLI](../beginner/05-contact-book/README.md) | Manage contacts with CRUD, search, atomic JSON storage, and CSV export. |
 
 ### Intermediate
 

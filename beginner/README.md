@@ -22,6 +22,7 @@ and running a script from the terminal.
 | [Safe File Organizer CLI](02-file-organizer/README.md) | Organise files into category folders with a dry-run default, no overwrites, and undo. |
 | [Number Guessing Game](03-number-guessing-game/README.md) | Guess the secret number with difficulty levels and fully deterministic, testable logic. |
 | [Secure Password Generator](04-password-generator/README.md) | Generate strong random passwords with secrets, guaranteeing character-group requirements. |
+| [Contact Book CLI](05-contact-book/README.md) | Manage contacts with CRUD, search, atomic JSON storage, and CSV export. |
 <!-- project-index:end -->
 
 More projects are added incrementally. See the [roadmap](../docs/roadmap.md) for

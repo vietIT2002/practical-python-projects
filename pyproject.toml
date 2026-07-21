@@ -38,6 +38,7 @@ select = ["E", "F", "W", "I", "UP", "B", "SIM", "C4", "PTH", "RUF"]
 
 [tool.ruff.lint.isort]
 known-first-party = [
+    "contact_book",
     "expense_tracker",
     "file_organizer",
     "number_guessing_game",
@@ -60,6 +61,7 @@ mypy_path = [
     "beginner/02-file-organizer/src",
     "beginner/03-number-guessing-game/src",
     "beginner/04-password-generator/src",
+    "beginner/05-contact-book/src",
 ]
 # Project source is type-checked; per-project test suites share basenames
 # (e.g. test_cli.py) across projects, so they are checked by pytest, not mypy.
@@ -80,6 +82,7 @@ testpaths = [
     "beginner/02-file-organizer/tests",
     "beginner/03-number-guessing-game/tests",
     "beginner/04-password-generator/tests",
+    "beginner/05-contact-book/tests",
 ]
 pythonpath = [
     ".",
@@ -87,6 +90,7 @@ pythonpath = [
     "beginner/02-file-organizer/src",
     "beginner/03-number-guessing-game/src",
     "beginner/04-password-generator/src",
+    "beginner/05-contact-book/src",
 ]
 markers = [
     "integration: local multi-component test",
@@ -102,6 +106,7 @@ source = [
     "file_organizer",
     "number_guessing_game",
     "password_generator",
+    "contact_book",
 ]
 
 [tool.coverage.report]

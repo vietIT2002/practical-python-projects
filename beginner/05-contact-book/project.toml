@@ -1,0 +1,14 @@
+schema_version = 1
+id = "beginner-05"
+slug = "contact-book"
+title = "Contact Book CLI"
+level = "beginner"
+status = "complete"
+featured = false
+summary = "Manage contacts with CRUD, search, atomic JSON storage, and CSV export."
+python = ">=3.12"
+interfaces = ["cli"]
+concepts = ["crud", "dataclasses", "search", "json", "csv", "atomic-write"]
+prerequisites = ["functions", "basic classes"]
+tags = ["cli", "files"]
+estimated_minutes = 180
